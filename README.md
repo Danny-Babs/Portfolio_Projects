@@ -89,8 +89,9 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ```
 *The first query updates empty industry values to NULL. The second query deletes records where both total_laid_off and percentage_laid_off are missing, which ensures that only complete records remain.*
-```
-```
+``` ```
+
+
 ### 📈 Exploratory Data Analysis (EDA)
 
 **Key Points of EDA:**
