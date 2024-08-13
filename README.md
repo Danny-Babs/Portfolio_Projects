@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository contains two distinct projects that sho
 
 ## 📊 Data Cleaning and EDA Project
 
-### 🚀 Project Overview
+###  Project Overview
 
 This project focuses on cleaning and preparing a dataset related to layoffs. The goal is to enhance the quality of the data for further analysis by performing various data cleaning operations.
 
@@ -112,7 +112,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ## 🌐 Amazon Web Scraping Project
 
-#### 🚀 Project Overview
+#### Project Overview
 
 This project involves scraping product information from an Amazon product page. The aim is to collect data about product titles and ratings regularly and save this data for analysis.
 
