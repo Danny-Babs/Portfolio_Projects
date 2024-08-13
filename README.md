@@ -11,15 +11,15 @@ This project focuses on cleaning and preparing a dataset related to layoffs. The
 
 ### 🛠️ Key Steps
 
-1. **Create Staging Tables**: Duplicate the original data into a staging table to ensure that operations are performed on a separate dataset, preserving the integrity of the original data.
-2. **Remove Duplicates**: Use SQL queries to identify and delete duplicate entries, ensuring that each record is unique.
-3. **Standardize Data**: Clean and normalize data fields to ensure consistency. This includes trimming whitespace and standardizing values.
-4. **Fix Null Values**: Handle missing or null values by replacing them or removing the corresponding records.
-5. **Exploratory Data Analysis (EDA)**: Analyze the cleaned data to extract valuable insights and trends.
+1. **Creating Staging Tables**: In this step, the dataset was duplicated into a staging table to ensure that operations were performed on a separate dataset, thereby preserving the integrity of the original data.
+2. **Removing Duplicates**: SQL queries were used to identify and delete duplicate entries, ensuring that each record remained unique.
+3. **Standardizing Data**: Cleaning and normalizing data fields to ensure consistency, including trimming whitespace and standardizing values.
+4. **Adressing Null Values**: Handle missing or null values by replacing them or removing the corresponding records.
+5. **Exploratory Data Analysis (EDA)**: Analyzing the cleaned data to uncover valuable insights and identify trends.
 
 ### 📊 Sample SQL Queries
 
-**1. Create Staging Table**
+**1. Creating Staging Table**
 
 Create a staging table to duplicate the original data, allowing for safe manipulation:
 
@@ -28,7 +28,7 @@ CREATE TABLE layoffs_staging
 LIKE layoffs;
 ```
 
-**2. Remove Duplicate Records**
+**2. Removing Duplicate Records**
 
 Find and remove duplicate rows based on multiple columns to ensure unique entries:
 
