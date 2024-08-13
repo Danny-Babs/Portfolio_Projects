@@ -142,7 +142,7 @@ This project involves scraping product information from an Amazon product page. 
 
 | Title         | Ratings | Date       |
 |---------------|---------|------------|
-| Product XYZ   | 4.5     | 2024-08-13 |
+| Product    | 4.5     | 2024-08-13 |
 
 ### 🧩 Code Snippets
 
