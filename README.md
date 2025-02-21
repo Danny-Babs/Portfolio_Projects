@@ -101,7 +101,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 2. **Group and Aggregate:**
    - Summarize data by `company`, `industry`, and `country` to identify which entities have the highest total layoffs, providing insights into the most affected areas.
 
-3. **Trend Analysis:**
+## **Main takeaways from the project:**
   - **Tech** and **finance** sectors had the highest layoffs.
 - Layoffs **followed cyclical patterns, peaking during recessions**.
 - Certain companies **consistently reported higher layoffs**, suggesting restructuring patterns.
