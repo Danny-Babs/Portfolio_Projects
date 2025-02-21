@@ -133,11 +133,11 @@ The project web scrapes **Amazon product data**, extracting **titles, ratings, a
 2. **Run the Script**: Execute the Python script to start scraping.
    ```bash
    python scraper.py
-### 📝 Usage
+### Usage
 
 - **View Data**: Check the `AmazonWebScraperDataset.csv` file for the latest data.
 
-### 📊 Example Output
+### Example Output
 
 | Title         | Ratings | Date       |
 |---------------|---------|------------|
@@ -171,7 +171,7 @@ with open('AmazonWebScraperDataset.csv', 'a+', newline='', encoding='UTF8') as f
     writer = csv.writer(f)
     writer.writerow(data)
 ```
-### 🌟 Highlights
+###  Highlights
 
 - **Automated data collection** for tracking product trends.
 - **Structured storage** in CSV format for ease of analysis.
