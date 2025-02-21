@@ -1,15 +1,14 @@
-# Portfolio Projects
+# 📂 Portfolio Projects
 
-Welcome to my portfolio! This repository contains two distinct projects that showcase my skills in data analysis and web scraping.
+Here is my portfolio! This collection holds projects demonstrating my proficiency in **data analysis, data cleaning, and web scraping** by working on exploratory hands-on work.
 
 ## 📊 Data Cleaning and EDA Project
 
 ###  Project Overview
 
-This project focuses on cleaning and preparing a dataset related to layoffs. The goal is to enhance the quality of the data for further analysis by performing various data cleaning operations.
+The project deals with **data cleaning and preparation** of a layoff-related dataset to achieve high-quality data for further analysis. The **final EDA** investigates trends and insights in the cleaned data.
 
-
-### 🛠️ Key Steps
+### Key Steps
 
 1. **Creating Staging Tables**: In this step, the dataset was duplicated into a staging table to ensure that operations were performed on a separate dataset, thereby preserving the integrity of the original data.
 2. **Removing Duplicates**: SQL queries were used to identify and delete duplicate entries, ensuring that each record remained unique.
@@ -17,7 +16,7 @@ This project focuses on cleaning and preparing a dataset related to layoffs. The
 4. **Adressing Null Values**: Handle missing or null values by replacing them or removing the corresponding records.
 5. **Exploratory Data Analysis (EDA)**: Analyzing the cleaned data to uncover valuable insights and identify trends.
 
-### 📊 Sample SQL Queries
+### Sample SQL Queries
 
 **1. Creating Staging Table**
 
@@ -92,7 +91,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 ``` ```
 
 
-### 📈 Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 **Key Points of EDA:**
 
@@ -103,10 +102,9 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
    - Summarize data by `company`, `industry`, and `country` to identify which entities have the highest total layoffs, providing insights into the most affected areas.
 
 3. **Trend Analysis:**
-   - Analyze trends over time to identify patterns. This includes:
-     - **Yearly Trends**: Summarize layoffs by year to observe annual changes.
-     - **Monthly Trends**: Examine monthly data to detect seasonal or periodic patterns.
-     - **Rolling Totals**: Calculate cumulative totals to visualize overall trends over time.
+  - **Tech** and **finance** sectors had the highest layoffs.
+- Layoffs **followed cyclical patterns, peaking during recessions**.
+- Certain companies **consistently reported higher layoffs**, suggesting restructuring patterns.
 
 
 
@@ -114,22 +112,22 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 #### Project Overview
 
-This project involves scraping product information from an Amazon product page. The aim is to collect data about product titles and ratings regularly and save this data for analysis.
+The project web scrapes **Amazon product data**, extracting **titles, ratings, and timestamps** for market analysis.
 
-#### 🛠️ Features
+#### Features
 
 - **Scrape Product Data**: Extract product titles and ratings from Amazon.
 - **Save Data to CSV**: Write the collected data to a CSV file.
 - **Automate Data Collection**: Update the dataset with new data periodically.
 
-#### 📦 Dependencies
+#### Dependencies
 
 - **BeautifulSoup**: For parsing HTML content.
 - **Requests**: To fetch data from the web.
 - **CSV**: For writing data to CSV files.
 - **Pandas**: For data manipulation and analysis (optional).
 
-#### 📝 Usage
+#### Usage
 
 1. **Install Dependencies**: Ensure you have the required Python libraries.
 2. **Run the Script**: Execute the Python script to start scraping.
@@ -175,7 +173,7 @@ with open('AmazonWebScraperDataset.csv', 'a+', newline='', encoding='UTF8') as f
 ```
 ### 🌟 Highlights
 
-- **Automated Data Collection**: Keeps your dataset up-to-date with the latest product information.
-- **Easy Data Access**: Stores data in a CSV file for convenience.
-
+- **Automated data collection** for tracking product trends.
+- **Structured storage** in CSV format for ease of analysis.
+- **Scalable implementation** for long-term product tracking.
 
