@@ -171,8 +171,7 @@ with open('AmazonWebScraperDataset.csv', 'a+', newline='', encoding='UTF8') as f
     writer = csv.writer(f)
     writer.writerow(data)
 ```
-###  Highlights
-
+###  Main takeaways from the project
 - **Automated data collection** for tracking product trends.
 - **Structured storage** in CSV format for ease of analysis.
 - **Scalable implementation** for long-term product tracking.
