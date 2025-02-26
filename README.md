@@ -2,7 +2,7 @@
 
 Here is my portfolio! This collection holds projects demonstrating my proficiency in **data analysis, data cleaning, and web scraping** by working on exploratory hands-on work.
 
-## 📊 Data Cleaning and EDA Project
+## Data Cleaning and EDA Project
 
 ###  Project Overview
 
@@ -51,7 +51,7 @@ WHERE row_num > 1;
 It assigns a row number to each row partitioned by specific columns: company, location, industry, total_laid_off, percentage_laid_off, and date.*
 
 
-**3. Standardize Data**
+**3. Standardizing the Data**
 
 Trim whitespace from text fields and update inconsistent values:
 
@@ -72,7 +72,7 @@ WHERE country LIKE 'United States%';
 ```
  *These updates standardize the company, industry, and country fields by removing unnecessary whitespace and correcting inconsistent values.*
 
-**4. Handle Missing Values**
+**4. Handling Missing Values**
 
 Replace or remove records with missing or blank values:
 
