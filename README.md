@@ -1,178 +1,38 @@
 # 📂 Portfolio Projects
 
-Here is my portfolio! This collection holds projects demonstrating my proficiency in **data analysis, data cleaning, and web scraping** by working on exploratory hands-on work.
+This repository showcases two projects that highlight my proficiency in **SQL and Python**, focusing on **data analysis, business intelligence, and web scraping**.
 
-## Data Cleaning and EDA Project
+## 1️⃣ SQL Data Cleaning & Analysis Project
+A structured SQL project that involves **data cleaning, transformation, and exploratory data analysis (EDA)** to extract meaningful business insights.
 
-###  Project Overview
+### 🔹 Key Steps:
+- **Creating Staging Tables**: Ensuring safe data manipulation without altering the original dataset.
+- **Removing Duplicates**: Using SQL queries to maintain data integrity.
+- **Standardizing Data**: Cleaning and normalizing inconsistent entries.
+- **Handling Missing Values**: Imputing or removing null values to ensure high-quality data.
+- **Exploratory Data Analysis (EDA)**: Extracting insights on industry trends and layoff patterns.
 
-The project deals with **data cleaning and preparation** of a layoff-related dataset to achieve high-quality data for further analysis. The **final EDA** investigates trends and insights in the cleaned data.
+### 🛠️ Skills & Tools:
+- **SQL Techniques**: Joins, window functions, CTEs, aggregation, and optimization.
+- **Database Systems**: MySQL / PostgreSQL / SQL Server.
+- **Project Outcomes**: Cleaned and structured data for meaningful insights, identifying patterns in layoffs.
 
-### Key Steps
+## 2️⃣ Python Web Scraping & Data Analysis Project
+A Python-based project utilizing **web scraping techniques** to extract and analyze product data from Amazon.
 
-1. **Creating Staging Tables**: In this step, the dataset was duplicated into a staging table to ensure that operations were performed on a separate dataset, thereby preserving the integrity of the original data.
-2. **Removing Duplicates**: SQL queries were used to identify and delete duplicate entries, ensuring that each record remained unique.
-3. **Standardizing Data**: Cleaning and normalizing data fields to ensure consistency, including trimming whitespace and standardizing values.
-4. **Adressing Null Values**: Handle missing or null values by replacing them or removing the corresponding records.
-5. **Exploratory Data Analysis (EDA)**: Analyzing the cleaned data to uncover valuable insights and identify trends.
+### 🔹 Features:
+- **Scrape Product Data**: Extract product titles, ratings, and timestamps.
+- **Save Data to CSV**: Store structured data for further analysis.
+- **Automate Data Collection**: Enable periodic updates for tracking product trends.
 
-### Sample SQL Queries
-
-**1. Creating Staging Table**
-
-Create a staging table to duplicate the original data, allowing for safe manipulation:
-
-```sql
-CREATE TABLE layoffs_staging
-LIKE layoffs;
-```
-
-**2. Removing Duplicate Records**
-
-Find and remove duplicate rows based on multiple columns to ensure unique entries:
-
-```
--- Identify duplicates
-WITH duplicate_cte AS (
-  SELECT *,
-    ROW_NUMBER() OVER (
-      PARTITION BY company, location, industry, total_laid_off, percentage_laid_off, date
-      ORDER BY (SELECT NULL)
-    ) AS row_num
-  FROM layoffs_staging
-)
-
--- Remove duplicates
-DELETE FROM layoffs_staging
-WHERE row_num > 1; 
-```
-
-*The query above uses a Common Table Expression (CTE) to identify duplicates.
-It assigns a row number to each row partitioned by specific columns: company, location, industry, total_laid_off, percentage_laid_off, and date.*
+### 🛠️ Skills & Tools:
+- **Libraries Used**: BeautifulSoup, Requests, Pandas, NumPy, Matplotlib.
+- **Key Concepts**: Data wrangling, visualization, automation.
+- **Project Outcomes**: Automated data collection for trend analysis and decision-making.
 
 
-**3. Standardizing the Data**
+2. **Navigate to the desired project folder** and follow the specific README instructions within each directory.
 
-Trim whitespace from text fields and update inconsistent values:
-
-```
--- Trim whitespace from company names
-UPDATE layoffs_staging
-SET company = TRIM(company);
-
--- Standardize industry names
-UPDATE layoffs_staging
-SET industry = 'Crypto'
-WHERE industry LIKE 'Crypto%';
-
--- Trim trailing periods from country names
-UPDATE layoffs_staging
-SET country = TRIM(TRAILING '.' FROM country)
-WHERE country LIKE 'United States%';
-```
- *These updates standardize the company, industry, and country fields by removing unnecessary whitespace and correcting inconsistent values.*
-
-**4. Handling Missing Values**
-
-Replace or remove records with missing or blank values:
-
-```
--- Replace empty industry names with NULL
-UPDATE layoffs_staging
-SET industry = NULL
-WHERE industry = '';
-
--- Remove records with missing values in critical columns
-DELETE FROM layoffs_staging
-WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
-
-```
-*The first query updates empty industry values to NULL. The second query deletes records where both total_laid_off and percentage_laid_off are missing, which ensures that only complete records remain.*
-``` ```
-
-
-### Exploratory Data Analysis (EDA)
-
-**Key Points of EDA:**
-
-1. **Summary Statistics:**
-   - Determine maximum and minimum values for key metrics such as `total_laid_off` and `percentage_laid_off` to understand the range and distribution of the data.
-
-2. **Group and Aggregate:**
-   - Summarize data by `company`, `industry`, and `country` to identify which entities have the highest total layoffs, providing insights into the most affected areas.
-
-## **Main takeaways from the project:**
-  - **Tech** and **finance** sectors had the highest layoffs.
-- Layoffs **followed cyclical patterns, peaking during recessions**.
-- Certain companies **consistently reported higher layoffs**, suggesting restructuring patterns.
-
-
-
-## 🌐 Amazon Web Scraping Project
-
-#### Project Overview
-
-The project web scrapes **Amazon product data**, extracting **titles, ratings, and timestamps** for market analysis.
-
-#### Features
-
-- **Scrape Product Data**: Extract product titles and ratings from Amazon.
-- **Save Data to CSV**: Write the collected data to a CSV file.
-- **Automate Data Collection**: Update the dataset with new data periodically.
-
-#### Dependencies
-
-- **BeautifulSoup**: For parsing HTML content.
-- **Requests**: To fetch data from the web.
-- **CSV**: For writing data to CSV files.
-- **Pandas**: For data manipulation and analysis (optional).
-
-#### Usage
-
-1. **Install Dependencies**: Ensure you have the required Python libraries.
-2. **Run the Script**: Execute the Python script to start scraping.
-   ```bash
-   python scraper.py
-### Usage
-
-- **View Data**: Check the `AmazonWebScraperDataset.csv` file for the latest data.
-
-### Example Output
-
-| Title         | Ratings | Date       |
-|---------------|---------|------------|
-| Product    | 4.5     | 2024-08-13 |
-
-### 🧩 Code Snippets
-
-**Scrape Product Title and Ratings**
-
-```python
-from bs4 import BeautifulSoup
-import requests
-import csv
-import datetime
-
-# Scrape product title and ratings
-URL = 'https://www.amazon.com/...'
-headers = {"User-Agent": "Mozilla/5.0 ..."}
-page = requests.get(URL, headers=headers)
-soup = BeautifulSoup(page.content, "html.parser")
-
-title = soup.find(id='productTitle').get_text().strip()
-ratings = soup.find(id='acrPopover').get_text().strip()
-today = datetime.date.today()
-
-# Save data to CSV
-header = ['Title', 'Ratings', 'Date']
-data = [title, ratings, today]
-
-with open('AmazonWebScraperDataset.csv', 'a+', newline='', encoding='UTF8') as f:
-    writer = csv.writer(f)
-    writer.writerow(data)
-```
-###  Main takeaways from the project
-- **Automated data collection** for tracking product trends.
-- **Structured storage** in CSV format for ease of analysis.
-- **Scalable implementation** for long-term product tracking.
+## 📞 Contact
+If you have any questions or feedback, feel free to connect with me!
 
