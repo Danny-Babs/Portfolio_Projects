@@ -31,7 +31,7 @@ A Python-based project utilizing **web scraping techniques** to extract and anal
 - **Project Outcomes**: Automated data collection for trend analysis and decision-making.
 
 
-2. **Navigate to the desired project folder** and follow the specific README instructions within each directory.
+
 
 ## 📞 Contact
 If you have any questions or feedback, feel free to connect with me!
