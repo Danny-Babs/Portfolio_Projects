@@ -12,7 +12,7 @@ A structured SQL project that involves **data cleaning, transformation, and expl
 - **Handling Missing Values**: Imputing or removing null values to ensure high-quality data.
 - **Exploratory Data Analysis (EDA)**: Extracting insights on industry trends and layoff patterns.
 
-### 🛠️ Skills & Tools:
+###  Skills & Tools:
 - **SQL Techniques**: Joins, window functions, CTEs, aggregation, and optimization.
 - **Database Systems**: MySQL / PostgreSQL / SQL Server.
 - **Project Outcomes**: Cleaned and structured data for meaningful insights, identifying patterns in layoffs.
@@ -25,7 +25,7 @@ A Python-based project utilizing **web scraping techniques** to extract and anal
 - **Save Data to CSV**: Store structured data for further analysis.
 - **Automate Data Collection**: Enable periodic updates for tracking product trends.
 
-### 🛠️ Skills & Tools:
+###  Skills & Tools:
 - **Libraries Used**: BeautifulSoup, Requests, Pandas, NumPy, Matplotlib.
 - **Key Concepts**: Data wrangling, visualization, automation.
 - **Project Outcomes**: Automated data collection for trend analysis and decision-making.
@@ -33,6 +33,6 @@ A Python-based project utilizing **web scraping techniques** to extract and anal
 
 
 
-## 📞 Contact
+##  Contact
 If you have any questions or feedback, feel free to connect with me!
 
