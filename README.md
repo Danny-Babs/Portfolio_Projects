@@ -9,7 +9,7 @@ Welcome! This portfolio showcases two hands-on data projects that demonstrate my
 ###  Project Summary
 An HR analytics project focused on **cleaning and analyzing layoff data** to uncover industry patterns, economic signals, and workforce trends. Built entirely in SQL, this project simulates how a company might analyze public or internal HR data to inform executive decisions.
 
-###  Business Value – *So What?*
+###  Business Value (*So What?*)
 Understanding layoffs helps organizations **benchmark HR policies**, **predict risks**, and **navigate downturns**. This project shows how clean data leads to clear insights—helping HR and leadership teams **optimize workforce planning**.
 
 ###  Key Techniques
@@ -32,8 +32,8 @@ Understanding layoffs helps organizations **benchmark HR policies**, **predict r
 ###  Project Summary
 Built a lightweight **Python-based automation tool** to scrape and monitor product ratings from Amazon over time. The goal: Enable **real-time market tracking** for pricing, popularity, and performance of e-commerce products.
 
-###  Business Value – *So What?*
-This project mimics the functionality of a **competitive intelligence tool**—helping e-commerce teams or sellers **track customer sentiment and product success over time** without expensive platforms.
+###  Business Value  (*So What?*)
+This project mimics the functionality of a **competitive intelligence tool** helping e-commerce teams or sellers **track customer sentiment and product success over time** without expensive platforms.
 
 ###  Key Features
 - Automated scraping with **BeautifulSoup** and **Requests**
