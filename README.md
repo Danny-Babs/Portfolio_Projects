@@ -1,4 +1,4 @@
-#  Data Portfolio Projects
+# 📊 Data Portfolio Projects
 
 Welcome! This portfolio showcases two hands-on data projects that demonstrate my ability to **solve business problems using SQL and Python**. From HR analytics to e-commerce data automation, each project reflects my focus on **end-to-end data pipelines**, **real-world impact**, and **clean, scalable code**.
 
@@ -20,14 +20,14 @@ Understanding layoffs helps organizations **benchmark HR policies**, **predict r
   - Industry and country-wise layoff trends
   - Monthly and cumulative layoffs over time
 
-### 🧰 Tools & Skills
+###  Tools & Skills
 - SQL (MySQL syntax)
 - CTEs, Window Functions, Aggregations
 - HR Analytics, Workforce Trend Analysis
 
 ---
 
-## 🕸️ 2. Python Web Scraper: Amazon Product Tracker
+##  2. Python Web Scraper: Amazon Product Tracker
 
 ###  Project Summary
 Built a lightweight **Python-based automation tool** to scrape and monitor product ratings from Amazon over time. The goal: Enable **real-time market tracking** for pricing, popularity, and performance of e-commerce products.
@@ -35,7 +35,7 @@ Built a lightweight **Python-based automation tool** to scrape and monitor produ
 ###  Business Value – *So What?*
 This project mimics the functionality of a **competitive intelligence tool**—helping e-commerce teams or sellers **track customer sentiment and product success over time** without expensive platforms.
 
-### ⚙ Key Features
+###  Key Features
 - Automated scraping with **BeautifulSoup** and **Requests**
 - Scheduled tracking of **product titles, ratings, and timestamps**
 - Data saved in **CSV for analysis or dashboarding**
@@ -47,5 +47,3 @@ This project mimics the functionality of a **competitive intelligence tool**—h
 - E-commerce trend monitoring
 
 ---
-
-
