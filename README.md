@@ -1,38 +1,51 @@
-# 📂 Portfolio Projects
+#  Data Portfolio Projects
 
-This repository showcases two projects that highlight my proficiency in **SQL and Python**, focusing on **data analysis, business intelligence, and web scraping**.
+Welcome! This portfolio showcases two hands-on data projects that demonstrate my ability to **solve business problems using SQL and Python**. From HR analytics to e-commerce data automation, each project reflects my focus on **end-to-end data pipelines**, **real-world impact**, and **clean, scalable code**.
 
-## 1️⃣ SQL Data Cleaning & Analysis Project
-A structured SQL project that involves **data cleaning, transformation, and exploratory data analysis (EDA)** to extract meaningful business insights.
+---
 
-### 🔹 Key Steps:
-- **Creating Staging Tables**: Ensuring safe data manipulation without altering the original dataset.
-- **Removing Duplicates**: Using SQL queries to maintain data integrity.
-- **Standardizing Data**: Cleaning and normalizing inconsistent entries.
-- **Handling Missing Values**: Imputing or removing null values to ensure high-quality data.
-- **Exploratory Data Analysis (EDA)**: Extracting insights on industry trends and layoff patterns.
+##  1. HR Optimization with SQL: Layoff Trends Analysis
 
-###  Skills & Tools:
-- **SQL Techniques**: Joins, window functions, CTEs, aggregation, and optimization.
-- **Database Systems**: MySQL / PostgreSQL / SQL Server.
-- **Project Outcomes**: Cleaned and structured data for meaningful insights, identifying patterns in layoffs.
+###  Project Summary
+A data-driven HR analytics project focused on **cleaning and analyzing layoff data** to uncover industry patterns, economic signals, and workforce trends. Built entirely in SQL, this project simulates how a company might analyze public or internal HR data to inform executive decisions.
 
-## 2️⃣ Python Web Scraping & Data Analysis Project
-A Python-based project utilizing **web scraping techniques** to extract and analyze product data from Amazon.
+###  Business Value – *So What?*
+Understanding layoffs helps organizations **benchmark HR policies**, **predict risks**, and **navigate downturns**. This project shows how clean data leads to clear insights—helping HR and leadership teams **optimize workforce planning**.
 
-### 🔹 Features:
-- **Scrape Product Data**: Extract product titles, ratings, and timestamps.
-- **Save Data to CSV**: Store structured data for further analysis.
-- **Automate Data Collection**: Enable periodic updates for tracking product trends.
+###  Key Techniques
+- **Data Cleaning**: Deduplication, normalization, formatting dates, and handling NULLs
+- **Data Transformation**: Use of CTEs, `ROW_NUMBER()`, and subqueries
+- **Exploratory Analysis**:
+  - Top companies by layoffs per year
+  - Industry and country-wise layoff trends
+  - Monthly and cumulative layoffs over time
 
-###  Skills & Tools:
-- **Libraries Used**: BeautifulSoup, Requests, Pandas, NumPy, Matplotlib.
-- **Key Concepts**: Data wrangling, visualization, automation.
-- **Project Outcomes**: Automated data collection for trend analysis and decision-making.
+### 🧰 Tools & Skills
+- SQL (MySQL syntax)
+- CTEs, Window Functions, Aggregations
+- HR Analytics, Workforce Trend Analysis
 
+---
 
+## 🕸️ 2. Python Web Scraper: Amazon Product Tracker
 
+###  Project Summary
+Built a lightweight **Python-based automation tool** to scrape and monitor product ratings from Amazon over time. The goal: Enable **real-time market tracking** for pricing, popularity, and performance of e-commerce products.
 
-##  Contact
-If you have any questions or feedback, feel free to connect with me!
+###  Business Value – *So What?*
+This project mimics the functionality of a **competitive intelligence tool**—helping e-commerce teams or sellers **track customer sentiment and product success over time** without expensive platforms.
+
+### ⚙ Key Features
+- Automated scraping with **BeautifulSoup** and **Requests**
+- Scheduled tracking of **product titles, ratings, and timestamps**
+- Data saved in **CSV for analysis or dashboarding**
+- Designed for easy deployment and continuous use
+
+###  Tools & Skills
+- Python (BeautifulSoup, Requests, Pandas, CSV, DateTime)
+- Data wrangling and lightweight automation
+- E-commerce trend monitoring
+
+---
+
 
