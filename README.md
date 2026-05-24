@@ -4,7 +4,7 @@ Welcome! This portfolio showcases two hands-on data projects that demonstrate my
 
 ---
 
-##  1. HR Optimization with SQL: Layoff Trends Analysis
+##  1. EDA with SQL: Layoff Trends Analysis
 
 ###  Project Summary
 An HR analytics project focused on **cleaning and analyzing layoff data** to uncover industry patterns, economic signals, and workforce trends. Built entirely in SQL, this project simulates how a company might analyze public or internal HR data to inform executive decisions.
